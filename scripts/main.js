@@ -249,7 +249,7 @@ function addInvincibility(t, mobile){
   
   b.clicked(() => {
     var player = Vars.player;
-    player.unit().health = 1000000;
+    player.unit().health = Number.MAX_VALUE;
     invincibilityEffect.at(player.getX(), player.getY());
   });
   
